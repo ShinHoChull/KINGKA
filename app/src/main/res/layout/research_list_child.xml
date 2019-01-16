@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.gc.modules.customViews.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="35"/>
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:h="70">
+            <com.gc.modules.customViews.CustomTextView
+                android:id="@+id/research_main_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                app:fontSize="14"
+                />
+        </com.gc.modules.customViews.CustomView>
+
+
+        <com.gc.modules.customViews.CustomTextView
+            android:id="@+id/research_wait_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="준비중"
+            android:background="@drawable/research_subtext_radius"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            app:w="50"
+            app:h="17"/>
+
+    </com.gc.modules.customViews.CustomView>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

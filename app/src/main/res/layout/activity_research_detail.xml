@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResearchDetailActivity"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="50">
+
+            <include
+                layout="@layout/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.gc.modules.customViews.CustomView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#253460"
+            android:alpha="0.7"/>
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="47">
+
+            <include
+                layout="@layout/titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.gc.modules.customViews.CustomView>
+        <!--*************Top end-->
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:h="40"
+            >
+            <com.gc.modules.customViews.CustomView
+                android:id="@+id/researchDetail_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:h="40">
+                <com.gc.modules.customViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="소개"
+                    android:textColor="@color/main_color_darkgray"
+                    android:gravity="center"
+                    app:fontSize="14"
+                    android:layout_weight="1"
+                    app:h="37"/>
+                <com.gc.modules.customViews.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:h="3"
+                    />
+
+            </com.gc.modules.customViews.CustomView>
+            <com.gc.modules.customViews.CustomView
+                android:id="@+id/researchDetail_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:h="40">
+
+                <com.gc.modules.customViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="갤러리"
+                    android:textColor="#29469D"
+                    android:gravity="center"
+                    app:fontSize="14"
+                    android:layout_weight="1"
+                    app:h="37"/>
+                <com.gc.modules.customViews.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#29469D"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:h="3"
+                    />
+            </com.gc.modules.customViews.CustomView>
+
+            <com.gc.modules.customViews.CustomView
+                android:id="@+id/researchDetail_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:h="40">
+
+                <com.gc.modules.customViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="회칙"
+                    android:textColor="#29469D"
+                    android:gravity="center"
+                    app:fontSize="14"
+                    android:layout_weight="1"
+                    app:h="37"/>
+                <com.gc.modules.customViews.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#29469D"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:h="3"
+                    />
+            </com.gc.modules.customViews.CustomView>
+
+        </com.gc.modules.customViews.CustomView>
+
+
+        <com.gc.modules.customViews.CustomFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <com.gc.modules.customViews.CustomWebview
+                android:id="@+id/researchDetail_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <com.gc.modules.customViews.CustomGridView
+                android:id="@+id/researchDetail_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:numColumns="3"
+                android:gravity="center"
+                />
+        </com.gc.modules.customViews.CustomFrameLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

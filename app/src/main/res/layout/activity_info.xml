@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/info_backgroundV"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/photos_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/info_tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
+
+    <com.gc.modules.customViews.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:h="80">
+
+        <com.gc.modules.customViews.CustomTextView
+            android:id="@+id/info_closeBt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/info_bt_radius"
+            android:gravity="center"
+            android:text="닫기"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:fontSize="20"
+            app:h="50"
+            app:w="300" />
+
+
+    </com.gc.modules.customViews.CustomView>
+
+</LinearLayout>

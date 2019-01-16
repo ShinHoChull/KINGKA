@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.gc.modules.customViews.CustomFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <com.gc.modules.customViews.CustomView
+            android:id="@+id/schedule_radiusView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cirview"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:isSchedule="true"
+            app:w="30"
+            app:h="52"
+            />
+        <com.gc.modules.customViews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/tv_item_gridview"
+            app:fontSize="17"
+            />
+
+    </com.gc.modules.customViews.CustomFrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/main_color_gray"/>
+
+</LinearLayout>

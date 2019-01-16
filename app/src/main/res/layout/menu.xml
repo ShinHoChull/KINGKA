@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--전체-->
+<com.gc.modules.customViews.CustomView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#8C000000">
+
+    <com.gc.modules.customViews.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <!--top-->
+        <com.gc.modules.customViews.CustomView
+            android:id="@+id/menuMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/main_color_navy"
+            android:orientation="horizontal"
+            app:h="50">
+
+            <com.gc.modules.customViews.CustomTextView
+                android:id="@+id/menu_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:gravity="center_vertical"
+                android:text="안녕하세요 홍길동 선생님"
+                android:textColor="@android:color/white"
+                app:fontSize="17"
+                app:h="50"
+                app:w="177" />
+
+            <com.gc.modules.customViews.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:h="50"
+                app:w="43" />
+
+            <com.gc.modules.customViews.CustomImgView
+                android:id="@+id/menu_home_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:h="50"
+                app:img="@drawable/menu_home"
+                app:imgH="20"
+                app:imgW="23"
+                app:w="30" />
+
+            <com.gc.modules.customViews.CustomTextView
+                android:id="@+id/menu_home_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="HOME"
+                android:textColor="@android:color/white"
+                app:fontSize="17"
+                app:h="50" />
+
+
+
+        </com.gc.modules.customViews.CustomView>
+
+        <!--메뉴-->
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:h="550">
+            <!--TabButton view-->
+            <com.gc.modules.customViews.CustomGridView
+                android:id="@+id/menu_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/main_color_darkgray"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:numColumns="1"
+                android:scrollbars="none"
+                android:verticalSpacing="1px"
+                app:h="550"
+                app:w="80" />
+
+            <com.gc.modules.customViews.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:h="550">
+
+                <com.gc.modules.customViews.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#EDEDED"
+                    android:orientation="vertical"
+                    android:paddingLeft="17dp"
+                    app:h="80">
+
+                    <com.gc.modules.customViews.CustomTextView
+                        android:id="@+id/menu_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="학회소개"
+                        android:textColor="#00376D"
+                        app:fontSize="18"
+                        app:h="40" />
+
+                    <com.gc.modules.customViews.CustomTextView
+                        android:id="@+id/menu_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:text="대한위암학회를 소개합니다."
+                        android:layout_marginRight="30dp"
+                        android:textColor="#3B3B3B"
+                        app:fontSize="11"
+                        app:h="40" />
+
+                </com.gc.modules.customViews.CustomView>
+                <!--tableView-->
+                <com.gc.modules.customViews.CustomListView
+                    android:id="@+id/menuListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@null"
+                    android:listSelector="#f0f0f0"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    app:h="480">
+
+                </com.gc.modules.customViews.CustomListView>
+
+            </com.gc.modules.customViews.CustomView>
+
+        </com.gc.modules.customViews.CustomView>
+        <!--menu end-->
+
+        <!--Bottom-->
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0F2E4A"
+            android:orientation="horizontal"
+            app:h="40">
+            <com.gc.modules.customViews.CustomTextView
+                android:id="@+id/menu_notiText"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="공지사항   ·"
+                android:textColor="@android:color/white"
+                android:maxLines="1"
+                app:fontSize="13"
+                app:h="40"
+                app:w="60" />
+
+            <com.gc.modules.customViews.CustomTextView
+                android:id="@+id/menu_infoText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="   앱 이용안내"
+                android:textColor="@android:color/white"
+                app:fontSize="13"
+                app:h="40"
+                app:w="70" />
+
+            <com.gc.modules.customViews.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:h="40"
+                app:w="125" />
+
+            <com.gc.modules.customViews.CustomImgView
+                android:id="@+id/menu_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:h="40"
+                app:img="@drawable/menu_icosett"
+                app:imgH="18"
+                app:imgW="18"
+                app:touch="true"
+                app:w="20" />
+
+            <com.gc.modules.customViews.CustomTextView
+                android:id="@+id/menu_setting_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="설정"
+                android:textColor="@android:color/white"
+                app:fontSize="13"
+                app:h="40"
+                app:w="25" />
+
+        </com.gc.modules.customViews.CustomView>
+
+
+    </com.gc.modules.customViews.CustomView>
+
+
+    <com.gc.modules.customViews.CustomImgView
+        android:id="@+id/menu_closeBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:imgW="50"
+        app:imgH="50"
+        app:img="@drawable/btn_d_closed1"
+        android:background="@color/main_color_black"
+        app:h="50"
+        app:w="34" />
+
+
+
+</com.gc.modules.customViews.CustomView><!--전체 end-->
+
+

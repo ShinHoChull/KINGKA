@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="50">
+
+            <include
+                layout="@layout/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.gc.modules.customViews.CustomView>
+
+        <!--<com.gc.modules.customViews.CustomView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px" />-->
+
+        <com.gc.modules.customViews.CustomFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="264">
+            <com.gc.modules.customViews.CustomViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <android.support.design.widget.TabLayout
+                android:id="@+id/main_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@drawable/tab_selector"
+                android:layout_gravity="bottom"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+
+        </com.gc.modules.customViews.CustomFrameLayout>
+
+
+        <com.gc.modules.customViews.CustomGridView
+            android:id="@+id/main_grid"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:numColumns="3"
+            app:h="260" />
+        <!--공지사항-->
+        <com.gc.modules.customViews.CustomFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            app:h="66">
+
+            <com.gc.modules.customViews.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                app:h="66">
+
+                <com.gc.modules.customViews.CustomImgView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:h="66"
+                    app:img="@drawable/btn_d_notice1"
+                    app:imgDefaultColor="#1C50B4"
+                    app:imgH="22"
+                    app:imgW="23"
+                    app:w="45" />
+
+                <com.gc.modules.customViews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="공지사항"
+                    android:textColor="#1C50B4"
+                    android:textStyle="bold"
+                    app:fontSize="16"
+                    app:h="66"
+                    app:w="60"/>
+
+                <com.gc.modules.customViews.CustomTextView
+                    android:id="@+id/main_notice_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/black"
+                    app:fontSize="14"
+                    app:h="66" />
+            </com.gc.modules.customViews.CustomView>
+
+            <com.gc.modules.customViews.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_Sponsors_bottomV"
+                app:h="66"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                >
+                <com.gc.modules.customViews.CustomViewPager
+                    android:id="@+id/main_bottom_viewpager"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    app:h="66" />
+                <com.gc.modules.customViews.CustomImgView
+                    android:id="@+id/main_Sponsors_closeBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:img="@drawable/spon_btn_x"
+                    app:imgW="15"
+                    app:imgH="15"
+                    app:w="45"
+                    app:h="66"/>
+            </com.gc.modules.customViews.CustomView>
+
+
+        </com.gc.modules.customViews.CustomFrameLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

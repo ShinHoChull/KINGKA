@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ScheduleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <!--*************Top start-->
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="50">
+
+            <include
+                layout="@layout/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.gc.modules.customViews.CustomView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#253460"
+            android:alpha="0.7"/>
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="47">
+
+            <include
+                layout="@layout/titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.gc.modules.customViews.CustomView>
+        <!--*************Top end-->
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:h="40"
+            >
+            <com.gc.modules.customViews.CustomView
+                android:id="@+id/schadule_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:h="40">
+                <com.gc.modules.customViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="KINGCA"
+                    android:textColor="@color/main_color_darkgray"
+                    android:gravity="center"
+                    app:fontSize="14"
+                    android:layout_weight="1"
+                    app:h="37"/>
+                <com.gc.modules.customViews.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:h="3"
+                    />
+
+            </com.gc.modules.customViews.CustomView>
+            <com.gc.modules.customViews.CustomView
+                android:id="@+id/schadule_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:h="40">
+
+                <com.gc.modules.customViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="행사일정"
+                    android:textColor="#29469D"
+                    android:gravity="center"
+                    app:fontSize="14"
+                    android:layout_weight="1"
+                    app:h="37"/>
+                <com.gc.modules.customViews.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#29469D"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:h="3"
+                    />
+            </com.gc.modules.customViews.CustomView>
+
+        </com.gc.modules.customViews.CustomView>
+
+        <com.gc.modules.customViews.CustomFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.gc.modules.customViews.CustomView
+                android:id="@+id/schadule_calendarV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <com.gc.modules.customViews.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#253460"
+                    android:orientation="vertical"
+                    app:h="86">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:h="63">
+
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            app:h="63"
+                            app:w="85">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/schadule_TodayButton"
+                                android:layout_width="65dp"
+                                android:layout_height="27dp"
+                                android:background="@drawable/schedule_todaytext_radius"
+                                android:gravity="center"
+                                android:text="오늘"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                        </com.gc.modules.customViews.CustomView>
+
+
+                        <com.gc.modules.customViews.CustomImgView
+                            android:id="@+id/schadule_backDateButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:h="63"
+                            app:img="@drawable/btn_d_back1"
+                            app:imgH="36"
+                            app:imgW="36"
+                            app:w="40" />
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:id="@+id/schadule_mainDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            app:fontSize="17"
+                            app:h="63" />
+
+                        <com.gc.modules.customViews.CustomImgView
+                            android:id="@+id/schadule_nextDateButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:h="63"
+                            app:img="@drawable/btn_d_next1"
+                            app:imgH="36"
+                            app:imgW="36"
+                            app:w="40" />
+
+                        <com.gc.modules.customViews.CustomImgView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:w="85" />
+
+
+                    </com.gc.modules.customViews.CustomView>
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:h="23">
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="SUN"
+                            android:textColor="@android:color/white"
+                            app:fontSize="12" />
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="MON"
+                            android:textColor="@android:color/white"
+                            app:fontSize="12" />
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="TUE"
+                            android:textColor="@android:color/white"
+                            app:fontSize="12" />
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="WED"
+                            android:textColor="@android:color/white"
+                            app:fontSize="12" />
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="THU"
+                            android:textColor="@android:color/white"
+                            app:fontSize="12" />
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="FRI"
+                            android:textColor="@android:color/white"
+                            app:fontSize="12" />
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="SAT"
+                            android:textColor="@android:color/white"
+                            app:fontSize="12" />
+                    </com.gc.modules.customViews.CustomView>
+
+                </com.gc.modules.customViews.CustomView>
+                <!-- Date Title End-->
+                <com.gc.modules.customViews.CustomGridView
+                    android:id="@+id/schadule_gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="7"
+                    android:listSelector="@android:color/transparent"
+                    android:verticalSpacing="0dp"
+                    app:h="301" />
+                <com.gc.modules.customViews.CustomView
+                    android:id="@+id/schedule_subTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:h="41"
+                    android:background="#363C4E"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.gc.modules.customViews.CustomImgView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:img="@drawable/menu_icosett"
+                        android:layout_gravity="center"
+                        app:imgW="5"
+                        app:imgH="5"
+                        app:w="30"
+                        app:h="41"/>
+
+                    <com.gc.modules.customViews.CustomTextView
+                        android:id="@+id/schedule_subTabText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="달력접기"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        app:fontSize="14"
+                        app:h="41"
+                        />
+
+                    <com.gc.modules.customViews.CustomImgView
+                        android:id="@+id/schedule_subTabImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:img="@drawable/btn_d_unfold1"
+                        app:imgW="36"
+                        app:imgH="36"
+                        app:w="30"
+                        app:h="41"/>
+
+                </com.gc.modules.customViews.CustomView>
+                <ListView
+                    android:id="@+id/schadule_ListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"/>
+
+                <!--<com.gc.modules.customViews.CustomListView-->
+                    <!--android:id="@+id/schadule_ListView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--app:h="90"-->
+                    <!--/>-->
+
+            </com.gc.modules.customViews.CustomView>
+            <!--Calendar End-->
+            <!--webView Start-->
+            <com.gc.modules.customViews.CustomWebview
+                android:id="@+id/schadule_webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.gc.modules.customViews.CustomFrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

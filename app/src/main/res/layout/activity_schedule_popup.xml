@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.gc.modules.customViews.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000"
+        />
+
+    <com.gc.modules.customViews.CustomView
+        android:id="@+id/select_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical">
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="210"
+            />
+
+        <com.gc.modules.customViews.CustomFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/schedule_pop_top_radius"
+            app:h="45">
+
+            <com.gc.modules.customViews.CustomTextView
+                android:id="@+id/schdulePop_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                app:fontSize="16" />
+
+            <com.gc.modules.customViews.CustomImgView
+                android:id="@+id/schdulePop_closeImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                app:h="45"
+                app:img="@drawable/btn_d_closed1"
+                app:imgH="40"
+                app:imgW="40"
+                app:w="45" />
+        </com.gc.modules.customViews.CustomFrameLayout>
+
+        <ListView
+            android:id="@+id/schdulePop_listView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/schedule_pop_bottom_radius"
+            />
+
+
+    </com.gc.modules.customViews.CustomView>
+
+
+</com.gc.modules.customViews.CustomFrameLayout>
+

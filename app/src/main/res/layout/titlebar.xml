@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gc.modules.customViews.CustomFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#253460"
+        app:h="47">
+
+        <com.gc.modules.customViews.CustomTextView
+            android:id="@+id/titlebar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            app:fontSize="15"
+            app:h="47" />
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="47"
+            android:orientation="horizontal"
+            >
+
+            <com.gc.modules.customViews.CustomImgView
+                android:id="@+id/titlebar_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:touch="true"
+                app:h="47"
+                app:img="@drawable/btn_d_back1"
+                app:imgH="36"
+                app:imgW="36"
+                app:w="50" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <com.gc.modules.customViews.CustomImgView
+                android:id="@+id/titlebar_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:h="47"
+                app:img="@drawable/navi_option"
+                app:imgH="35"
+                app:imgW="35"
+                app:w="40" />
+
+        </com.gc.modules.customViews.CustomView>
+
+
+
+
+    </com.gc.modules.customViews.CustomFrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

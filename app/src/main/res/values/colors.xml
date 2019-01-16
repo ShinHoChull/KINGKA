@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#000000</color>
+
+    <color name="main_bt1">#1C50B4</color>
+    <color name="main_bt2">#1C8EE3</color>
+    <color name="main_bt3">#00376D</color>
+    <color name="main_bt4">#0F487D</color>
+    <color name="main_bt5">#0F2E4A</color>
+    <color name="main_bt6">#354698</color>
+
+    <color name="main_color_gray">#EDEDED</color>
+    <color name="main_color_darkgray">#CFCFCF</color>
+    <color name="main_color_navy">#1D204D</color>
+    <color name="main_color_blue">#3B42AC</color>
+    <color name="main_color_darkblue">#253460</color>
+    <color name="main_color_black">#3B3B3B</color>
+    <color name="main_color_white">#EFF1F6</color>
+    <color name="main_color_skyblue">#54ADCB</color>
+    <color name="schadule_sat_color">#6F88FF</color>
+    <color name="schadule_sun_color">#EF6161</color>
+</resources>

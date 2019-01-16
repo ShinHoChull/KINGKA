@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.gc.modules.customViews.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-1dp"
+        android:background="@drawable/top_back"
+        android:orientation="horizontal"
+        app:h="50">
+
+        <com.gc.modules.customViews.CustomImgView
+            android:id="@+id/status_bar_menu"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/main_btnhamber"
+            app:img="@drawable/main_btnhamber"
+            app:imgH="15"
+            app:imgW="15"
+            app:touch="true"
+            app:w="50" />
+
+        <com.gc.modules.customViews.CustomImgView
+            android:id="@+id/status_bar_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/main_toplogo"
+            app:img="@drawable/main_toplogo"
+            app:imgH="27"
+            app:touch="true"
+            app:imgW="105" />
+
+        <com.gc.modules.customViews.CustomTextView
+            android:id="@+id/schedule_calendar_bt"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            app:w="60"
+            android:text="캘린더등록"
+            android:textColor="@color/main_color_white"
+            android:textSize="10sp"
+            android:background="#E49100"
+            app:h="25"
+            />
+
+        <com.gc.modules.customViews.CustomImgView
+            android:id="@+id/status_bar_search"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/main_btnsearch"
+            android:visibility="invisible"
+            app:img="@drawable/main_btnsearch"
+            app:imgH="18"
+            app:imgW="18"
+            app:touch="true"
+            app:w="50" />
+
+    </com.gc.modules.customViews.CustomView>
+
+
+
+</android.support.constraint.ConstraintLayout>

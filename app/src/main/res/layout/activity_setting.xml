@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_white"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="50">
+
+            <include
+                layout="@layout/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.gc.modules.customViews.CustomView>
+
+        <com.gc.modules.customViews.CustomView
+            android:id="@+id/subLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#253460"
+            android:alpha="0.7"
+             />
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="47">
+
+            <include
+                layout="@layout/titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.gc.modules.customViews.CustomView>
+
+        <com.gc.modules.customViews.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="75">
+
+            <com.gc.modules.customViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="대한위암학회 공지사항 및 행사안내 등 학회에서\n
+제공하는 소식을 모바일 앱 Push로 받아볼 수 있습니다."
+                android:textColor="@color/main_color_black"
+                app:fontSize="14"
+                app:h="75" />
+
+        </com.gc.modules.customViews.CustomView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <!--행사일정 start-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        app:h="40">
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="18dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="행사일정"
+                            android:textColor="@color/main_color_darkblue"
+                            app:fontSize="17"
+                            app:h="40"
+                            app:w="280" />
+
+                        <com.gc.modules.customViews.CustomImgView
+                            android:id="@+id/setting_op1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:h="40"
+                            app:img="@drawable/togleon"
+                            app:imgH="20"
+                            app:imgW="55"
+                            app:w="60" />
+                    </com.gc.modules.customViews.CustomView>
+                </TableRow>
+                <!--행사일정 end-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:h="5" />
+                </TableRow>
+
+                <!--***************회원공간 start-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:h="157">
+
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="회원공간"
+                                android:textColor="@color/main_color_darkblue"
+                                app:fontSize="17"
+                                app:h="40"
+                                app:w="280" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--회원공간 > 공지사항-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 공지사항"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--회원공간 > 모집공고-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 모집공고"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--회원공간 > 회원소식-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 회원소식"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+
+                    </com.gc.modules.customViews.CustomView>
+
+
+                </TableRow>
+                <!--***************회원공간 end-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:h="5" />
+                </TableRow>
+
+                <!--신하연구회 start-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        app:h="40">
+
+                        <com.gc.modules.customViews.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="18dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="산하연구회"
+                            android:textColor="@color/main_color_darkblue"
+                            app:fontSize="17"
+                            app:h="40"
+                            app:w="280" />
+
+                        <com.gc.modules.customViews.CustomImgView
+                            android:id="@+id/setting_op5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:h="40"
+                            app:img="@drawable/togleon"
+                            app:imgH="20"
+                            app:imgW="55"
+                            app:w="60" />
+                    </com.gc.modules.customViews.CustomView>
+                </TableRow>
+                <!--신하연구회 end-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:h="5" />
+                </TableRow>
+
+                <!--***************일반자료실 start-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:h="157">
+
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="일반자료실"
+                                android:textColor="@color/main_color_darkblue"
+                                app:fontSize="17"
+                                app:h="40"
+                                app:w="280" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--일반자료실 > 자료실-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 자료실"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--일반자료실 > 보험관련-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 보험관련"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--일반자료실 > 진료권고안-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 진료권고안"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+                    </com.gc.modules.customViews.CustomView>
+                </TableRow>
+                <!--***************일반자료실 end-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:h="5" />
+                </TableRow>
+
+                <!--***************교육자료 start-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:h="120">
+
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="교육자료"
+                                android:textColor="@color/main_color_darkblue"
+                                app:fontSize="17"
+                                app:h="40"
+                                app:w="280" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--교육자료 > 지난초록보기-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 지난초록보기"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+                        <!--교육자료 > 교육자료-->
+                        <com.gc.modules.customViews.CustomView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            app:h="40">
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="- 교육자료"
+                                android:textColor="@color/main_color_darkgray"
+                                app:fontSize="14"
+                                app:h="40"
+                                app:w="280" />
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:id="@+id/setting_op10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                app:h="40"
+                                app:img="@drawable/togleon"
+                                app:imgH="20"
+                                app:imgW="55"
+                                app:w="60" />
+                        </com.gc.modules.customViews.CustomView>
+
+                    </com.gc.modules.customViews.CustomView>
+                </TableRow>
+                <!--***************교육자료 end-->
+                <TableRow
+                    android:id="@+id/setting_logOutV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <com.gc.modules.customViews.CustomView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:h="70">
+
+                        <com.gc.modules.customViews.CustomView
+                            android:id="@+id/setting_logout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:background="@color/main_color_darkblue"
+                            app:h="40"
+                            app:w="220">
+
+                            <com.gc.modules.customViews.CustomImgView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30dp"
+                                app:h="40"
+                                app:img="@drawable/icologout"
+                                app:imgH="20"
+                                app:imgW="20"
+                                app:w="55" />
+
+                            <com.gc.modules.customViews.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="로그아웃"
+                                android:gravity="center_vertical"
+                                android:textColor="@android:color/white"
+                                app:fontSize="17"
+
+                                app:h="40"/>
+
+                        </com.gc.modules.customViews.CustomView>
+
+
+                    </com.gc.modules.customViews.CustomView>
+
+                </TableRow>
+
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
