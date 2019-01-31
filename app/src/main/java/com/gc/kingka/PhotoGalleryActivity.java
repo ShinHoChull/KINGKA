@@ -63,7 +63,8 @@ public class PhotoGalleryActivity extends AppCompatActivity implements AdapterVi
         this.optionBt.setVisibility(View.GONE);
 
         this.photo_topBt = findViewById(R.id.photo_topBt);
-        photo_topBt.setVisibility(View.GONE);
+        this.photo_topBt.setVisibility(View.GONE);
+
     }
 
 

@@ -91,7 +91,6 @@ public class HttpConnection {
             Log.e("buf",data);
 
             user_code = data;
-
         }
         catch (Exception e)
         {

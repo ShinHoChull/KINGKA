@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".IntroActivity">
 
-
     <ImageView
         android:id="@+id/intro_img"
         android:layout_width="match_parent"

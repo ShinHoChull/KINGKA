@@ -63,8 +63,6 @@
         <attr name="h"/>
     </declare-styleable>
 
-
-
     <declare-styleable name="CustomSpiner">
         <attr name="w"/>
         <attr name="h"/>

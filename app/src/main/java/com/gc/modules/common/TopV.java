@@ -75,7 +75,6 @@ public class TopV extends RelativeLayout implements View.OnTouchListener{
         this.logo.setOnTouchListener(this);
 
 
-
         this.searchBt.setId(new Integer(3));
         this.searchBt.setX(g.x(326));
         this.searchBt.setY(g.y(16));
